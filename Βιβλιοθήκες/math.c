@@ -1,7 +1,16 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h> 
+
+#define M_PI 3.14159265358979323846
 
 int main() {
+
+    // Αλλαγή της κωδικοποίησης σε 1253 ("Windows-1253" ή "Greek Windows")
+    // system("chcp 1253"); 
+    // Αλλαγή της κωδικοποίησης σε UTF-8
+     system("chcp 65001");
+     
     int x = 2;
     int y = 3;
 
@@ -20,7 +29,7 @@ int main() {
     
     printf("Ο αριθμός πι: %d\n", M_PI);
     double radians = M_PI / 4;
-    printf("Γωνία σε ακτίνιαν: %d\n", radians));
+    printf("Γωνία σε ακτίνιαν: %d\n", radians);
     printf("Η μητρική του x: %d\n", sin(radians));
     printf("Η συνημιτονική του x: %d\n", cos(radians));
     printf("Η εφαπτομενική του x: %d\n", tan(radians));
