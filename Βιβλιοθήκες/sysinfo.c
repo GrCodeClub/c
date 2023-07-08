@@ -1,6 +1,4 @@
-/*
-Για τα Windows, το αρχείο sys/sysinfo.h δεν είναι διαθέσιμο, καθώς ανήκει στην POSIX βιβλιοθήκη που συνήθως χρησιμοποιείται σε Unix-παρόμοια λειτουργικά συστήματα.
-*/
+/*Για τα Windows, το αρχείο sys/sysinfo.h δεν είναι διαθέσιμο*/
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/sysinfo.h>
