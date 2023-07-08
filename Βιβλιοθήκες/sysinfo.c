@@ -5,7 +5,6 @@
 
 int main() {
     struct sysinfo system_info;
-
     printf("Συνολική φυσική μνήμη: %lu\n", system_info.totalram);
     printf("Διαθέσιμη φυσική μνήμη: %lu\n", system_info.freeram);
     printf("Συνολική εικονική μνήμη: %lu bytes\n", system_info.totalswap);
@@ -19,6 +18,5 @@ int main() {
     printf("Αριθμός φορτίου (5 min): %ld\n", system_info.loads[1]);
     printf("Αριθμός φορτίου (15 min): %ld\n", system_info.loads[2]);
     printf("Συνολική χρονική διάρκεια λειτουργίας του συστήματος: %ld seconds\n", system_info.uptime);
-
     return 0;
 }
