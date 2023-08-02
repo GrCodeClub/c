@@ -1,4 +1,4 @@
- //windows: https://curl.se/windows/
+ //gcc -o output_file input_file.c -lcurl
 #include <stdio.h>
 #include <curl/curl.h>
 
