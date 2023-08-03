@@ -1,4 +1,4 @@
- //gcc -o output_file input_file.c -lcurl
+//gcc -o output_file input_file.c -lcurl
 #include <stdio.h>
 #include <curl/curl.h>
 
