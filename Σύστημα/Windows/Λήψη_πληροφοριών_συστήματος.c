@@ -22,9 +22,12 @@ int main() {
     printf("Allocation Granularity: %u\n", systemInfo.dwAllocationGranularity);
 
 
-    printf("Μέγεθος Σελίδας Μνήμης: %lu bytes\n", systemInfo.dwPageSize);
+    MEMORYSTATUSEX memInfo;
+    memInfo.dwLength = sizeof(MEMORYSTATUSEX);
 
-
+    printf("Συνολική φυσική μνήμη: %lld bytes\n", memInfo.ullTotalPhys);
+    printf("Διαθέσιμη φυσική μνήμη: %lld bytes\n", memInfo.ullAvailPhys);
+    
     return 0;
 }
 
