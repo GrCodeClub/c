@@ -6,14 +6,8 @@
 
 int main() {
 
-    // Αλλαγή της κωδικοποίησης σε 1253 ("Windows-1253" ή "Greek Windows")
-    // system("chcp 1253"); 
-    // Αλλαγή της κωδικοποίησης σε UTF-8
-     system("chcp 65001");
-     
     int x = 2;
     int y = 3;
-
 
     printf("Απόλυτη τιμή του x: %f\n",  fabs(x));
     printf("Απόλυτη τιμή του y: %f\n", fabs(y));
