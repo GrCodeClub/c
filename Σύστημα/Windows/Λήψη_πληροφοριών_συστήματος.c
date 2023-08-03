@@ -3,7 +3,11 @@
 #include <windows.h>
 
 int main() {
-
+    //Αλλαγή της κωδικοποίησης σε 1253 ("Windows-1253" ή "Greek Windows")
+    //system("chcp 1253");
+    //Αλλαγή της κωδικοποίησης σε UTF-8
+    system("chcp 65001");
+    
     SYSTEM_INFO systemInfo;
     GetSystemInfo(&systemInfo);
 
