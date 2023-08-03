@@ -5,13 +5,7 @@
 
 int main() {
 
-    // Αλλαγή της κωδικοποίησης σε 1253 ("Windows-1253" ή "Greek Windows")
-    // system("chcp 1253"); 
-    // Αλλαγή της κωδικοποίησης σε UTF-8
-     system("chcp 65001");
-     
-
- struct timespec sleepTime, remainingTime;
+    struct timespec sleepTime, remainingTime;
 
     // Ορισμός του χρόνου αναμονής
     sleepTime.tv_sec = 2; // Δευτερόλεπτα
