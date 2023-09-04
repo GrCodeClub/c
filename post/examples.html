@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=0.8">
+            <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
+            <meta property="og:title" content="Γλώσσα Προγραμματισμού C | Εντολές">
+            <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
+            <script src="https://grcodeclub.github.io/programming/menu.js"></script>
+            <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+            <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+            <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+            <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+            <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+            <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+             <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+            <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <script src="https://grcodeclub.github.io/javascript/prism.js"></script>
+        <title> GrCode Club</title>
+    </head>
+
+  <body class="programming">
+        <div class="container">
+            <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <table>
+                        <tr>
+                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                            <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                            <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/programming/c/command.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                        </tr>
+                    </table> 
+                </div> <!--Τέλος Επικεφαλίδας-->
+           
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="  overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div><!--Τέλος Menu-->
+
+            </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+            <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                    <table>
+                        <tr>
+                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                            <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                        </tr>
+                    </table> 
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <table>  <!--Αρχή Menu σε κινητά-->
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                            <label for="openSidebarMenu" class="sidebarIconToggle">
+                                <div class="spinner diagonal part-1"></div>
+                                <div class="spinner horizontal"></div>
+                                <div class="spinner diagonal part-2"></div>
+                            </label>
+                            <div id="sidebarMenu" style="overflow: auto;">
+                                <ul class="sidebarMenuInner"></ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table> <!--Τέλος Menu σε κινητά-->
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+            <div class="Text"> <!--Αρχή Κειμένου-->
+                <a href="../c.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+
+                    <h1 class="title">Παραδείγματα</h1>
+
+                    <h1 class="highlight_blue">Βιβλιοθηκες</h1>
+                    <p>
+                        <a class="link" href="./library/math.html">math.h</a>
+                    </p>
+
+
+                    <h1 class="highlight_blue">Παραδείγματα</h1>
+                    <p>
+                        Όταν εκτελέσετε αυτόν τον κώδικα, θα σας ζητηθεί να εισάγετε έναν ακέραιο αριθμό. Μετά την εισαγωγή σας, το πρόγραμμα θα τυπώσει τον αριθμό που εισαγάγατε.
+                    </p>
+<div class="bg_preview" >
+    <div  class="appearance">
+        <div class="space"> 
+            <div class="buttons1"> </div><div class="buttons2"> </div><div class="buttons3"> </div>
+        </div>
+        <div class="name_input">c</div>
+    </div>
+    <div  class="line-numbers"><pre class="code_editor"><code class="language-c">
+#include  &lt;stdio.h&gt;
+int main() {
+    int number;
+    // Ζητάμε τον χρήστη να εισάγει έναν ακέραιο αριθμό
+    printf("Παρακαλώ εισάγετε έναν ακέραιο αριθμό: ");
+    scanf("%d", &number);
+    // Εκτυπώνουμε τον αριθμό που εισήγαγε ο χρήστης
+    printf("Εισαγωγή: %d\n", number);
+    return 0;
+}</code></pre></div></div>
+
+
+<p>Παράδειγμα που εκτυπώνει όλους τους τύπους δεδομένων.</p>
+<div class="bg_preview" >
+    <div  class="appearance">
+        <div class="space"> 
+            <div class="buttons1"> </div><div class="buttons2"> </div><div class="buttons3"> </div>
+        </div>
+        <div class="name_input">c</div>
+    </div>
+    <div  class="line-numbers"><pre class="code_editor"><code class="language-c">
+#include  &lt;stdio.h&gt;
+int main() {
+    int integerNumber = 42;
+    float floatNumber = 3.14159;
+    double doubleNumber = 2.71828;
+    char character = 'A';
+    char string[] = "Hello, World!";          
+    printf("Ακέραιος: %d\n", integerNumber);
+    printf("Δεκαδικός αριθμός (float): %f\n", floatNumber);
+    printf("Δεκαδικός αριθμός (double): %lf\n", doubleNumber);
+    printf("Χαρακτήρας: %c\n", character);
+    printf("Συμβολοσειρά: %s\n", string);          
+    return 0;
+}</code></pre></div></div>
+
+<p>
+    Παράδειγμα με επανάληψης for που χρησιμοποιείται για να εκτελέσει τον κώδικα εντός του βρόχου για τις τιμές του i από 1 έως 5. Κάθε φορά που η επανάληψη εκτελείται, ο αριθμός i αυξάνεται κατά 1 και τυπώνεται.
+</p>
+<div id="11" class="bg_preview" >
+    <div  class="appearance">
+        <div class="space"> 
+            <div class="buttons1"> </div><div class="buttons2"> </div><div class="buttons3"> </div>
+        </div>
+        <div class="name_input">c</div>
+    </div>
+    <div  class="line-numbers"><pre class="code_editor"><code class="language-c">
+#include  &lt;stdio.h&gt;
+int main() {
+    // Χρησιμοποιούμε τη δομή επανάληψης for για να εκτυπώσουμε τους αριθμούς 1 έως 5
+    for (int i = 1; i <= 5; i++) {
+        printf("Αριθμός: %d\n", i);
+    }
+    return 0;
+}</code></pre></div></div>
+
+                </div><!-- Τέλος Background Κειμένου-->
+
+            </div> <!--Τέλος Κειμένου-->
+
+        </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+        </footer>
+    </body>
+</html>
