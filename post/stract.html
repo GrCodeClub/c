@@ -4,7 +4,7 @@
         <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
         <meta property="og:title" content="Γλώσσα Προγραμματισμού C | Δομές (Specific Structures)">
         <script src="https://grcodeclub.github.io/js/jquery.js"></script>
-        <script src="https://grcodeclub.github.io/programming/menu.js"></script>
+        <script src="https://grcodeclub.github.io/programming/post/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
@@ -74,7 +74,7 @@
                     <br><br>
                      <hr>
 
-                 <h1 class="highlight_blue" id="tm">Stuct tm</h1>
+                 <h1 class="highlight_black" id="tm">Stuct tm</h1>
                   <p>Χρησιμοποιείται για την αναπαράσταση ημερομηνιών και ωρών.
                     Η δομή struct tm ορίζεται στο αρχείο κεφαλίδας <b>&lt;time.h&gt;</b> και έχει την εξής μορφή
                 <div class="bg_preview" >
@@ -98,7 +98,7 @@ struct tm {
                   // (1 = θερινή ώρα, 0 = μη θερινή ώρα, -1 = άγνωστο)
 }; </code></pre></div></div>
 
-                      <h1 class="highlight_blue" id="timeval">Struct timeval </h1>
+                      <h1 class="highlight_black" id="timeval">Struct timeval </h1>
                       <p>Χρησιμοποιείται για την αναπαράσταση χρονικών διαστημάτων με ακρίβεια μέχρι τα μικροδευτερόλεπτα.
                         Η δομή struct timeval ορίζεται στο αρχείο κεφαλίδας <b>&lt;sys/time.h&gt;</b> και έχει την εξής μορφή</p>
                         <div class="bg_preview" >
@@ -135,7 +135,7 @@ long tv_nsec;  //Αναπαριστά τον αριθμό των νανοδευ�
 
           
 
-    <h1 class="highlight_blue" id="sockaddr">Stuct sockaddr</h1>
+    <h1 class="highlight_black" id="sockaddr">Stuct sockaddr</h1>
     <p>
         Η δομή sockaddr είναι μια βασική δομή που χρησιμοποιείται στην προγραμματιστική γλώσσα C για την προγραμματισμό των sockets. 
         Ορίζεται στο αρχείο κεφαλίδας <b>&lt;sys/socket.h&gt;</b> και χρησιμοποιείται για να αναπαραστήσει μια γενική διεύθυνση socket.
@@ -157,7 +157,7 @@ struct sockaddr {
     unsigned short sa_family;
     char sa_data[14];  
 };</code></pre></div></div>
-    <h1 class="highlight_blue" id="sockaddr_in">Stuct sockaddr_in</h1>
+    <h1 class="highlight_black" id="sockaddr_in">Stuct sockaddr_in</h1>
                          <p>
                         Η δομή sockaddr_in χρησιμοποιείται στη γλώσσα προγραμματισμού C για να αναπαραστήσει μια διεύθυνση IPv4 για τη χρήση με sockets. 
                         Η δομή struct timeval ορίζεται στο αρχείο κεφαλίδας <b>&lt;netinet/in.h&gt;</b> και έχει την εξής μορφή:
@@ -182,7 +182,7 @@ struct sockaddr {
       char sin_zero[8];       
   };</code></pre></div></div>
 
-    <h1 class="highlight_blue" id="sockaddr_in6">Stuct sockaddr_in6</h1>
+    <h1 class="highlight_black" id="sockaddr_in6">Stuct sockaddr_in6</h1>
     <p>Χρησιμοποιείται για την αναπαράσταση διευθύνσεων IPv6.<br>Η δομή sockaddr_in6 ορίζεται στο αρχείο κεφαλίδας <b>#include &lt;netinet/in.h&gt;</b> και έχει την εξής μορφή:
         <ul>
           <li>sin6_len: Το μέγεθος της δομής sockaddr_in6 σε bytes.</li>
@@ -209,7 +209,7 @@ uint32_t        sin6_scope_id; // Αναγνωριστικό εύρους (γι�
 }; </code></pre></div></div>
 
     
-    <h1 class="highlight_blue" id="stat">Stuct stat</h1>
+    <h1 class="highlight_black" id="stat">Stuct stat</h1>
     <p>
         Η δομή struct stat περιέχει πληροφορίες για ένα αρχείο, όπως το αναγνωριστικό συσκευής, ο αριθμός inode, ο τύπος αρχείου και τα δικαιώματα πρόσβασης, το μέγεθος του αρχείου, ο χρήστης-κατόχος, η ομάδα-κατόχος, ο χρόνος τελευταίας πρόσβασης, ο χρόνος τελευταίας τροποποίησης και ο χρόνος τελευταίας αλλαγής των μεταδεδομένων. Οι συγκεκριμένες πληροφορίες εξαρτώνται από το λειτουργικό σύστημα και το σύστημα αρχείων που χρησιμοποιείται.
         <br><br> 
@@ -255,7 +255,7 @@ struct stat {
     time_t    st_ctime;       // Χρόνος τελευταίας αλλαγής δομής αρχείου
 };</code></pre></div></div>
 
-    <h1 class="highlight_blue" id="dirent">Stuct dirent</h1>
+    <h1 class="highlight_black" id="dirent">Stuct dirent</h1>
     <p>Οι δομές struct dirent χρησιμοποιούνται συνήθως με συναρτήσεις όπως η readdir() για την ανάγνωση των καταχωρίσιμων αρχείων ενός καταλόγου. Με τη χρήση της δομής struct dirent, μπορείτε να αποκτήσετε πρόσβαση σε πληροφορίες όπως τα ονόματα αρχείων και οι τύποι αρχείων που υπάρχουν σε έναν κατάλογο.
         <br><br>
         Η δομή struct dirent ορίζεται στο αρχείο κεφαλίδας <b>&lt;dirent.h&gt;</b> και έχει την εξής μορφή:
@@ -282,7 +282,7 @@ struct dirent {
 };</code></pre></div></div>
 
 
-    <h1 class="highlight_blue" id="flock">Stuct flock</h1>
+    <h1 class="highlight_black" id="flock">Stuct flock</h1>
     <p>
         Η δομή flock χρησιμοποιείται στην γλώσσα προγραμματισμού C για τον έλεγχο κλειδώματος αρχείων (file locking). 
         Χρησιμοποιείται για να εφαρμοστεί κλείδωμα σε ένα αρχείο ή να ελευθερωθεί κλείδωμα που ήδη υπάρχει.
@@ -324,7 +324,7 @@ struct flock {
 };</code></pre></div></div>
 
 
-    <h1 class="highlight_blue" id="sigaction">Stuct sigaction</h1>
+    <h1 class="highlight_black" id="sigaction">Stuct sigaction</h1>
     <p>
         Η δομή struct sigaction είναι μια προκαθορισμένη (built-in) δομή στη γλώσσα προγραμματισμού C που χρησιμοποιείται για την καθορισμό της συμπεριφοράς ενός προγράμματος κατά τη λήψη σήματος (signal).
         <br><br>
