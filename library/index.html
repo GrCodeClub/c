@@ -1,0 +1,148 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
+        <meta property="og:title" content="Γλώσσα Προγραμματισμού C | Bιβλιοθήκες">
+        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/programming/post/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
+
+    <body class="programming">
+        <div class="container">
+            <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                        <div><a href="https://github.com/GrCodeClub/c/edit/main/post/library.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></div>
+                    </div> 
+                </div> <!--Τέλος Επικεφαλίδας-->
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="  overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div><!--Τέλος Menu-->
+            </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+            <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    </div> 
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu" style="overflow: auto;">
+                    <ul class="sidebarMenuInner"></ul>
+                </div>
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+            <div class="Text"> <!--Αρχή Κειμένου-->
+                <a href="https://grcodeclub.gr/c/"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+
+                    <h1 class="title">Bιβλιοθήκες <br> <input type="input" class="form__field" placeholder="Αναζητηση Βιβλιοθήκης" id='searchInput'/></h1>
+            <table id="table" class="style2">
+              <tr>
+                <th>Βιβλιοθήκη</th>
+                <th>Περιγραφή</th>
+              </tr>
+              <tr class="style2">
+                <td><code>#include &lt;stdio.h&gt;</code></td>
+                <td>Βιβλιοθήκη εισόδου/εξόδου που παρέχει συναρτήσεις όπως <code>printf()</code> και <code>scanf()</code>.</td>
+              </tr>
+              <tr class="style2">
+                <td><code>#include &lt;stdlib.h&gt;</code></td>
+                <td>Βιβλιοθήκη που παρέχει συναρτήσεις για τη διαχείριση μνήμης, δυναμική ανάθεση μνήμης και άλλες γενικές λειτουργίες.</td>
+              </tr>
+              <tr class="style2">
+                <td><a href="./library/math.html"><u><code>#include &lt;math.h&gt;</code></u></a></td>
+                <td>Βιβλιοθήκη μαθηματικών που παρέχει συναρτήσεις όπως το τετραγωνικό ρίζωμα, η εκθετική συνάρτηση, οι τριγωνομετρικές συναρτήσεις και άλλες.</td>
+              </tr>
+              <tr class="style2">
+                <td><code>#include &lt;string.h&gt;</code></td>
+                <td>Βιβλιοθήκη για λειτουργίες σχετικές με τις συμβολοσειρές, όπως αντιγραφή, συγκατάθεση, σύγκριση και άλλες.</td>
+              </tr>
+              <tr class="style2">
+                <td><code>#include &lt;ctype.h&gt;</code></td>
+                <td>Βιβλιοθήκη για τον έλεγχο και τη μετατροπή χαρακτήρων, όπως οι συναρτήσεις <code>isalpha()</code>, <code>isdigit()</code> και <code>toupper()</code>.</td>
+              </tr>
+              <tr class="style2">
+                <td><code>#include &lt;time.h&gt;</code></td>
+                <td>Βιβλιοθήκη που παρέχει συναρτήσεις για την εργασία με την χρονολογία και την ώρα, όπως η <code>time()</code> και η <code>strftime()</code>.</td>
+              </tr>
+              <tr class="style2">
+                <td><code>#include &lt;stdbool.h&gt;</code></td>
+                <td>Βιβλιοθήκη που παρέχει τον τύπο δεδομένων <code>bool</code> και τις τιμές <code>true</code> και <code>false</code> για λογικές εκφράσεις.</td>
+              </tr>
+              <tr class="style2">
+                <td><code>#include &lt;limits.h&gt;</code></td>
+                <td>Περιέχει σταθερές που παρέχουν πληροφορίες για τα όρια των διάφορων τύπων δεδομένων, όπως το μέγιστο και ελάχιστο τιμή.</td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;assert.h&gt;</code></td>
+                  <td>Χρησιμοποιείται για την υλοποίηση ελέγχων της προϋπόθεσης και της ασφάλειας του προγράμματος.</td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;stdarg.h&gt;</code></td>
+                  <td>Χρησιμοποιείται για τη δημιουργία συναρτήσεων που δέχονται μεταβλητό αριθμό ορισμάτων.</td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;signal.h&gt;</code></td>
+                  <td>Παρέχει τις δυνατότητες επικοινωνίας με το λειτουργικό σύστημα μέσω σημάτων.</td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;errno.h&gt;</code></td>
+                  <td>Χρησιμοποιείται για τη διαχείριση σφαλμάτων που σχετίζονται με λειτουργίες συστήματος.</td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;pthread.h&gt;</code></td>
+                  <td>Χρησιμοποιείται για τα threads.</td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;unistd.h&gt;</code></td>
+                  <td> Χρησιμοποιείται για διάφορες λειτουργίες συστήματος, όπως <code>sleep</code>.</td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;curl/curl.h&gt;</code></td>
+                  <td></td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;winsock2.h&gt;</code></td>
+                  <td>Επιτρέπει τη δημιουργία και διαχείριση δικτυακών συνδέσεων (Windows Sockets).</td>
+              </tr>
+              <tr class="style2">
+                  <td><code>#include &lt;arpa/inet.h&gt;</code></td>
+                  <td>Περιέχει δηλώσεις για συναρτήσεις που χρησιμοποιούνται για τη μετατροπή διευθύνσεων δικτύου και port από την αναπαράσταση δικτύου στην αναπαράσταση μηχανής και αντίστροφα.</td>
+              </tr>
+            </table>
+                  <script src="https://grcodeclub.github.io/javascript/search/search_table_row_cells_0.js"></script> 
+
+                </div><!-- Τέλος Background Κειμένου-->
+
+            </div> <!--Τέλος Κειμένου-->
+
+        </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
+        </footer>
+    </body>
+</html>
