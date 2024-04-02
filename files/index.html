@@ -1,9 +1,8 @@
-
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
         <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
-        <meta property="og:title" content="Γλώσσα Προγραμματισμού C | Εντολές">
+        <meta property="og:title" content="Γλώσσα Προγραμματισμού C | Αρχεία">
         <script src="https://grcodeclub.github.io/js/jquery.js"></script>
         <script src="https://grcodeclub.github.io/programming/js/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
@@ -74,9 +73,8 @@ table{
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
                     <h1 class="title">Αρχεία</h1>
                     <h3 class="highlight_black" id="tm">Άνοιγμα και Κλείσιμο αρχείου</h3>
-                    <table>
-                      <tr style="background-color: lightblue; color: black; font-size: 20px;">
-                          <td>Συνάρτηση</td><td>Λειτουργία</td></tr>
+                    <table style="margin-left: 10px;">
+                        <tr style="background-color: rgb(1, 16, 21); color: rgb(255, 255, 255); font-size: 20px;"><td>Συνάρτηση</td><td>Λειτουργία</td></tr>
                       <tr><td>fopen()</td><td>Ανοιγεί ένα αρχείο</td></tr>
                       <tr><td>fclose()</td><td>Κλείνει ένα αρχείο</td></tr>
                       <tr><td>feof()</td><td>Επιστρέφει true(1) όταν έχουμε ξεπεράσει το τέλος ενός αρχείου</td></tr>
@@ -86,8 +84,8 @@ table{
                       <tr><td>fflushall()</td><td>Αδειάζει την περιοχή προσωρινής αποθήκευσης εισόδου/εξόδου όλων των αρχείων.</td></tr>
                     </table>
                     <h3 class="highlight_black" id="tm">Καταστάσεις που μπόρουμε να ανοίξουμε ένα αρχειο</h3>
-                    <table style="color: white; padding-left: 5px;">
-                      <tr style="background-color: lightblue; color: black; font-size: 20px;">
+                    <                    <table style="margin-left: 10px;">
+                        <tr style="background-color: rgb(1, 16, 21); color: rgb(255, 255, 255); font-size: 20px;">
                             <td>Κατάσταση</td><td>Τύπος αρχείου</td><td>Λειτουργία</td><td>Δείκτης θέσης</td><td>Σχόλια</td></tr>
                         <tr><td>"r"</td><td>Κειμένου</td><td>Ανάγνωση</td><td>Αρχή</td><td>Το αρχείο πρέπει να υπάρχει</td></tr>
                         <tr><td>"w"</td><td>Κειμένου</td><td>Εγγραφή</td><td>Αρχή</td><td>Αν υπάρχει το αρχείο διαγράφονται τα περιεχόμενα του.</td></tr>
@@ -128,8 +126,33 @@ int main() {
   fclose(file);  
   return 0;
 }</code></pre></div></div>
-                </div><!-- Τέλος Background Κειμένου-->
 
+                <h3 class="highlight_black" id="tm">Αρχεία Κειμένου</h3>
+                    <table style="margin-left: 10px;">
+                      <tr style="background-color: rgb(1, 16, 21); color: rgb(255, 255, 255); font-size: 20px;"><td>Συνάρτηση</td><td>Λειτουργία</td></tr>
+                      <tr><td>fputc()</td><td>Γράφει έναν χαρακτήρα σε ένα αρχείο</td></tr>
+                      <tr><td>fgetc()</td><td>Διαβάζει έναν χαρακτήρα από κάποιο αρχείο</td></tr>
+                      <tr><td>fprintf()</td><td>Πραγματοποιεί εγγραφή σε ένα αρχείο, όπως η printf στην οθόνη </td></tr>
+                      <tr><td>fscanf()</td><td>Πραγματοποιεί ανάγνωση από ένα αρχείο, όπως η scanf από το πληκτρολόγιο</td></tr>
+                      <tr><td>fgets()</td><td>Διαβάζει ένα σύνολο χαρακτήρων από ένα αρχείο</td></tr>
+                      <tr><td>fputs()</td><td>Γράφει ένα σύνολο χαρακτήρων σε ένα αρχείο.</td></tr>
+                    </table>
+
+                    <table style="margin-left: 10px;">
+                      <tr style="background-color: rgb(1, 16, 21); color: rgb(255, 255, 255); font-size: 20px;"><td>Συνάρτηση</td><td>Λειτουργία</td></tr>
+                      <tr><td>fwrite()</td><td>Γράφει σε ένα αρχείο ένα πλ΄θος από τμήματα συγκεκριμένου μεγέθους σε byte, τα οποια διαβάζει από κάποια περιοχή μνήμης.</td></tr>
+                      <tr><td>fread()</td><td>Έχει παρόμοια σύνταξη με την fwrite(), με την διαφορά ότι διαβαζει από κάποιο αρχείο ένα πλήθος από τμήματα συγκεκριμένου μεγέθους σε byte και τα τοποθετεί σε κάποια περιοχή μνήμης </td></tr>
+                    </table>
+                <p> Σύνταξη fread()</p>
+                <div class="bg_preview"><div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">size_t fread(void *buffer,size_t arbyte, size_t fores, FILE *fp);</code></pre></div></div>
+                <p> Σύνταξη fwrite()</p>
+                <div class="bg_preview"><div  class="line-numbers"><pre class="code_editor"><code class="language-cpp">size_t fwrite(void *buffer,size_t arbyte, size_t fores, FILE *fp);</code></pre></div></div>
+                <ol>
+                    <li>buffer: Είναι ο δείκτης που δείχνει στην περιοχή της μνλημης απ΄την οποία θα διαβαστούν τα byte που θα εγραφούν στο αρχείο.</li>
+                    <li>arbyte: Δείχνει τον αριθμό των byte του κάθε τμήματος.</li>
+                    <li>fores: Δείχνει το πλήθος των τμημάτων που θα διαβαστούν</li>
+                    <li>fp: Καθαρίζει ρεύμα με το οποίο είναι συνδεδεμένο το αρχείο.</li>
+                </ol>
             </div> <!--Τέλος Κειμένου-->
 
         </div> <!--Τέλος container-->
